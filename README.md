@@ -23,3 +23,6 @@ Since this application is implemented to be used with C# projects under visual s
 3- Table types as input and output of procedures and functions will be listed as user types, but user types are not scripted.
 4- Database location, users, properties are not scripted. This was a decision I had to make due to the way these users were created by DBA in our organization (3 out of 4 in my previous jobs).
 5- No `DROP` scripted for tables, this is to protect data from accidental deletion.
+
+## NOTE
+This application stores database connection string in registry with encrypted password, however if extra security is required, these settings can be removed using registry file included with release.
